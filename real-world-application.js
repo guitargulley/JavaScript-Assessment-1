@@ -57,6 +57,7 @@ var crayola1990 = [
 	'Timberwolf',
 	'Antique Brass'
 ];
+console.log(crayola1990.length)
 
 //create a loop that will iterate over each item in the array and then use the String methods to modify the value at the current position in the array
 
