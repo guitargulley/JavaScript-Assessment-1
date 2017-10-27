@@ -64,4 +64,17 @@ var crayola1990 = [
  * remember strings are immutable but the value of a variable can be adjusted as often as needed.
  * take advantage of the methods available on stings http://www.w3schools.com/js/js_string_methods.asp
  * there are multiple ways to do something like this but you might consider using split and join
- */ 
+ */
+
+function reName(crayons) {
+	var output = []
+	crayons.forEach(function (crayon) {
+		var color = crayon.toLowerCase()
+		if (color.includes(' ')) {
+			output.push(color.split(' ').join('-'))
+			return output
+		}
+		output.push(color)
+	})
+	console.log(output)
+} console.log(reName(crayola1990))
