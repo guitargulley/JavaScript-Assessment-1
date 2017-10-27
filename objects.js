@@ -15,6 +15,6 @@ console.log(me)
 function showPerson(obj) {
 
 	for(var prop in obj){
-		console.log(`obj.${prop}`)
+		console.log(`obj.${prop} = ${obj[prop]}`)
 	}
 } console.log(showPerson(me))
